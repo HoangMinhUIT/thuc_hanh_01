@@ -82,6 +82,7 @@ void check_digit(HocSinh &a){
         dtb = (Toán + Văn) / 2
 */
 void input(HocSinh &a){
+    cout << "Moi nhap ho ten: ";
     getline(cin, a.hoTen);
     check_digit(a);
     a.dtb = (a.DiemToan + a.DiemVan)/2;
@@ -103,7 +104,7 @@ void output(HocSinh a){
     ChuanHoaTen(a);
     cout << a.hoTen<<" ";
     cout << "Toan: " << a.DiemToan << " " << "Van: " <<a.DiemVan << " ";
-    cout << setprecision(3) << "DTB: " << a.dtb;
+    cout << fixed << setprecision(3) << "DTB: " << a.dtb;
     cout << endl;
 }
 
